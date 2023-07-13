@@ -20,6 +20,14 @@ def get_mtcars_inputs():
             max=35,
             value=[10, 35],
         ),
+        ui.input_slider(
+            "MTCARS_WEIGHT",
+            "Weight (1,000 lbs)",
+            min=1500,
+            max=5500,
+            value=[1500, 5500],
+        ),
+
         ui.tags.hr(),
         ui.tags.section(
             ui.h3("MT Cars Table"),
